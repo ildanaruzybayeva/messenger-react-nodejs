@@ -12,10 +12,12 @@
  **************************
  
  <h3> Functionality: </h3>
- 1) Login using your name & chat room
- 2) Start chatting with people in the same room
- 3) See active users in the room
- 4) Leave the room when done chatting
+<ol>
+<li>Login using your name & chat room
+<li>Start chatting with people in the same room
+<li>See active users in the room
+<li>Leave the room when done chatting
+</ol>
  
  **************************
  <h3> Additional info: </h3>
