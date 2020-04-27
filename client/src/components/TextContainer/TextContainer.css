@@ -11,6 +11,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 50%;
+    color: #f64f59;
 }
 
 .activeItem {
