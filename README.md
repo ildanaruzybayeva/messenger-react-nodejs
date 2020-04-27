@@ -16,5 +16,5 @@ MessageUp is a real-time chat application built using
  
  **************************
  
- The server is deployed to Heroku
- The client is deployed to Netlify
+ -The server is deployed to Heroku
+ -The client is deployed to Netlify
