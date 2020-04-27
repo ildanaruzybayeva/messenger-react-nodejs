@@ -1,0 +1,12 @@
+tasks:
+  - name: server
+    before: cd server
+    init: npm install
+    command: npm start
+
+  - name: client
+    before: cd client
+    init: npm install
+    command: npm start
+image:
+  file: .gitpod.Dockerfile
