@@ -17,6 +17,7 @@ const Chat = ({ location }) => {
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
+    const [load, setLoad] = useState(false);
     const ENDPOINT = 'https://nodejs-react-chat-app.herokuapp.com/';
 
     useEffect(() => {
@@ -26,6 +27,7 @@ const Chat = ({ location }) => {
 
         setRoom(room);
         setName(name);
+        setLoad(true);
 
         socket.emit('join', { name, room }, error => {
             if (error) {
@@ -63,7 +65,13 @@ const Chat = ({ location }) => {
                     sendMessage={sendMessage}
                 />
             </div>
-            <TextContainer users={users} room={room} />
+            {load === true ? (
+                <TextContainer users={users} room={room} />
+            ) : (
+                <div style={{ color: 'white', margin: '100px' }}>
+                    loading...
+                </div>
+            )}
         </div>
     );
 };
